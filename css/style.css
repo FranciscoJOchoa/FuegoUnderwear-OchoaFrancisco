@@ -92,7 +92,6 @@ color: #f1f1f1;
     flex-basis: auto;
     align-content: flex-end;
     justify-content: flex-end;
-    flex-direction: column-reverse;
     flex-wrap: wrap;
     padding: 0;
 }
@@ -488,5 +487,46 @@ color: #f1f1f1;
 .carousel-indicators  [data-bs-target] {
 
 background-color: black;
+}
+
+/* ----------MAIN NOSOTROS------------ */
+
+.nosotros{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: stretch;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: black;
+    color: white;
+    width: 50vw;
+    max-width: 500px;
+    margin: auto;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    border-radius: 7px;
+    font-weight: bold
+
+}
+
+.contenedortexto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: stretch;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: black;
+    color: white;
+    width: 50vw;
+    max-width: 520px;
+    margin: auto;
+    padding: 40px;
+    margin-top: 40px;
+    margin-bottom: 45px;
+    border-radius: 25px;
+    
 }
 
