@@ -95,6 +95,7 @@
     justify-content: flex-end;
     flex-wrap: wrap;
     padding: 0;
+    flex-direction: column;
 }
 
 
@@ -592,7 +593,7 @@ ul.slider li img {
     width: 93%;
     height: 300px;
     object-fit: contain;
-    
+
 }
 
 ul.slider li:first-child {
@@ -626,3 +627,150 @@ ul.slider li:target {
 }
 
 /* ----------------MEDIA QUERYS----------- */
+@media (max-width: 600px) {
+
+
+    /*----------INDEXX----------- */
+    .grilla {
+        display: grid;
+        grid-template-areas:
+            "hotsale hotsale hotsale"
+            "nav nav nav "
+            "colecciones colecciones colecciones "
+            "instagram instagram instagram  redes"
+            "contacto contacto contacto redes";
+    }
+
+    .hotsale {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 14vh;
+    }
+
+    .hotsale img {
+        display: flex;
+        max-width: 90px;
+        align-items: center;
+        align-content: center;
+        flex-direction: column;
+    }
+
+    .hotsale p {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        align-content: center;
+        flex-direction: column;
+    }
+
+    .hotsale span {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        align-content: center;
+        flex-direction: column;
+    }
+
+    .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        align-content: center;
+        flex-direction: column;
+    }
+
+    .nav ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        align-content: center;
+        flex-direction: column;
+    }
+
+    .nav img {
+        max-width: 90px;
+    }
+
+    .nav h1 {
+        display: flex;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        align-content: center;
+        flex-direction: column;
+    }
+
+    .colecciones {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        align-content: center;
+        flex-direction: column;
+    }
+
+    .instagram {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        align-content: center;
+        flex-direction: column;
+    }
+
+    /*----------Galeria de imagenes----------- */
+
+    ul.slider li img {
+        width: 70%;
+        height: 300px;
+        object-fit: contain;
+
+    }
+
+    .menu {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        padding-left: 190px;
+    }
+
+    /*----------CONTACTO----------- */
+    
+    .formulario {
+        grid-area: contacto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: solid 3px black;
+        width: 80vw;
+        max-width: 500px;
+        margin: auto;
+        background: rgba(189, 189, 189, 0.5);
+        padding: 10px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        border-radius: 7px;
+}
+}
+
+@media (max-width: 1000px) {
+    .formulario {
+        grid-area: contacto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: solid 3px black;
+        width: 85vw;
+        max-width: 400px;
+        margin: auto;
+        background: rgba(189, 189, 189, 0.5);
+        padding: 10px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        border-radius: 7px;   
+}
+}
