@@ -1,0 +1,7 @@
+@mixin parrafocontacto($colorfondo, $colorletra) {
+    padding: 10px;
+    font-size: 25px;
+    text-align: center;
+    font-family: $colorfondo;
+    font-weight: $colorletra;
+}

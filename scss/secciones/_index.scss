@@ -1,0 +1,348 @@
+.hotsale {
+    grid-area: hotsale;
+    display: flex;
+    text-align: center;
+    background-color: black;
+    color: white;
+    height: 7vh;
+    align-content: center;
+    justify-content: center;
+    flex-direction: row;
+
+    span {
+        font-weight: bold;
+    }
+
+    p {
+        padding-top: 15px;
+    }
+}
+
+.nav {
+    background-color: black;
+    color: #f1f1f1;
+    grid-area: nav;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+
+    img {
+        transition: 0.5s;
+
+        &:hover {
+            transform: scale(0.8);
+        }
+    }
+
+    ul {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    li {
+        list-style: none;
+        padding: 15px;
+        transition: 0.5s;
+
+        &:hover {
+            transform: scale(0.8);
+        }
+    }
+
+    a {
+        list-style: none;
+        text-decoration: none;
+        font-weight: bold;
+        color: #f1f1f1;
+    }
+}
+
+.color {
+    background-color: black;
+    color: #f1f1f1;
+}
+
+.nave {
+    display: flex;
+    flex-basis: auto;
+    align-content: flex-end;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    padding: 0;
+    flex-direction: column;
+}
+
+.logo {
+    grid-area: colecciones;
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+
+    section {
+        position: relative;
+        height: 100px;
+        cursor: pointer;
+        width: 200px;
+        overflow: hidden;
+        border-radius: 6px;
+        box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5);
+
+        img {
+            width: 100%;
+            height: 100%;
+            transition: all 900ms ease-out;
+            will-change: transform;
+        }
+
+        .capa {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgb(0, 0, 0);
+            transition: all 600ms ease-out;
+            opacity: 0;
+            visibility: hidden;
+            text-align: center;
+        }
+
+        &:hover> {
+            .capa {
+                opacity: 1;
+                visibility: visible;
+
+                h3 {
+                    margin-top: 30px;
+                    margin-bottom: 15px;
+                }
+            }
+
+            img {
+                transform: scale(1.2);
+            }
+        }
+
+        .capa h3 {
+            color: #fff;
+            font-weight: 500;
+            margin-bottom: 120px;
+            transition: all 400ms ease-out;
+            margin-top: 45px;
+            font-weight: bold;
+            padding-top: 10px;
+        }
+    }
+}
+
+.colecciones {
+    grid-area: colecciones;
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+
+    section {
+        position: relative;
+        height: 350px;
+        cursor: pointer;
+        width: 400px;
+        overflow: hidden;
+        border-radius: 6px;
+        box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5);
+
+        img {
+            width: 100%;
+            height: 100%;
+            transition: all 900ms ease-out;
+            will-change: transform;
+        }
+
+        .capa {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 103, 123, 0.7);
+            transition: all 600ms ease-out;
+            opacity: 0;
+            visibility: hidden;
+            text-align: center;
+        }
+
+        &:hover> {
+            .capa {
+                opacity: 1;
+                visibility: visible;
+
+                h3 {
+                    margin-top: 70px;
+                    margin-bottom: 15px;
+                }
+            }
+
+            img {
+                transform: scale(1.2);
+            }
+        }
+
+        .capa {
+            h3 {
+                color: #fff;
+                margin-bottom: 120px;
+                transition: all 400ms ease-out;
+                margin-top: 30px;
+            }
+
+            p {
+                color: #fff;
+                font-size: 15px;
+                line-height: 1.5;
+                width: 100%;
+                max-width: 220px;
+                margin: auto;
+            }
+        }
+    }
+}
+
+.logoinstagram {
+    grid-area: instagram;
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+}
+
+.logoinstagram section {
+    position: relative;
+    height: 125px;
+    cursor: pointer;
+    width: 175px;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50);
+
+}
+
+.logoinstagram section img {
+    width: 100%;
+    height: 100%;
+    transition: all 900ms ease-out;
+    will-change: transform;
+}
+
+.logoinstagram section .capa {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0);
+    transition: all 600ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+
+.logoinstagram section:hover>.capa {
+    opacity: 1;
+    visibility: visible;
+}
+
+.logoinstagram section:hover>.capa h3 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.logoinstagram section:hover>img {
+    transform: scale(1.2);
+}
+
+.logoinstagram section .capa h3 {
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 120px;
+    transition: all 400ms ease-out;
+    margin-top: 45px;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+
+.instagram {
+    grid-area: instagram;
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.instagram {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}
+
+
+.instagram section {
+    position: relative;
+    height: 350px;
+    cursor: pointer;
+    width: 400px;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50);
+
+}
+
+.instagram section img {
+    width: 100%;
+    height: 100%;
+    transition: all 900ms ease-out;
+    will-change: transform;
+}
+
+.instagram section .capa {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 103, 123, 0.7);
+    transition: all 600ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+
+.instagram section:hover>.capa {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.instagram section:hover>img {
+    transform: scale(1.2);
+}
+
+
+.instagram section .capa p {
+    color: #fff;
+    font-size: 10px;
+    line-height: 1.5;
+    width: 50%;
+    max-width: 150px;
+    margin: auto;
+    padding-top: 60px;
+
+}

@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.grilla {
+    display: grid;
+    grid-template-areas: "hotsale hotsale hotsale hotsale hotsale" "nav nav nav nav nav" "colecciones colecciones colecciones colecciones colecciones" "instagram instagram instagram instagram redes" "contacto contacto contacto contacto redes";
+  }
+  // VARIABLES//
+  @import './variables/extend';
+  @import './variables/mixins';
+
+  @import './secciones/index';
+  @import './secciones/nosotros';
+  @import './secciones/contacto';
+  @import './secciones/boxers';
+
+// medias querys//
+
+/* ----------------MEDIA QUERYS----------- */
+@media (max-width: 600px) {
+    
+    /*----------INDEXX----------- */
+    .grilla {
+      display: grid;
+      grid-template-areas: "hotsale hotsale hotsale" "nav nav nav " "colecciones colecciones colecciones " "instagram instagram instagram  redes" "contacto contacto contacto redes";
+    }
+  
+    .hotsale {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 14vh;
+  
+      img {
+        display: flex;
+        max-width: 90px;
+        align-items: center;
+        align-content: center;
+        flex-direction: column;
+      }
+  
+      p, span {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        align-content: center;
+        flex-direction: column;
+      }
+    }
+  
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      align-content: center;
+      flex-direction: column;
+  
+      ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        align-content: center;
+        flex-direction: column;
+      }
+  
+      img {
+        max-width: 90px;
+      }
+  
+      h1 {
+        display: flex;
+        align-items: center;
+        justify-items: center;
+      }
+    }
+  
+    .logo, .colecciones, .instagram {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      align-content: center;
+      flex-direction: column;
+    }
+  
+    /*----------Galeria de imagenes----------- */
+  
+    ul.slider li img {
+      width: 70%;
+      height: 300px;
+      object-fit: contain;
+    }
+  
+    .menu {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      padding-left: 190px;
+    }
+  
+    /*----------CONTACTO----------- */
+  
+    .formulario {
+      grid-area: contacto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border: solid 3px black;
+      width: 80vw;
+      max-width: 500px;
+      margin: auto;
+      background: rgba(189, 189, 189, 0.5);
+      padding: 10px;
+      margin-top: 20px;
+      margin-bottom: 30px;
+      border-radius: 7px;
+    }
+  }
+  
+  @media (max-width: 1100px) {
+    .formulario {
+      grid-area: contacto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border: solid 3px black;
+      width: 85vw;
+      max-width: 400px;
+      margin: auto;
+      background: rgba(189, 189, 189, 0.5);
+      padding: 10px;
+      margin-top: 20px;
+      margin-bottom: 30px;
+      border-radius: 7px;
+    }
+  }
+
+
+
+
+
+
+
