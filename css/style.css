@@ -416,8 +416,9 @@ img:hover {
   width: 800px;
   padding: 30px; }
 
-ul, li {
-  padding: 0;
+ul,
+li {
+  padding: 2px;
   margin: 0;
   list-style: none; }
 
@@ -462,8 +463,101 @@ ul.slider {
   width: 50%;
   margin: 0 auto; }
 
-/* ----------------MEDIA QUERYS----------- */
-@media (max-width: 600px) {
+@media (max-width: 1100px) {
+  .formulario {
+    grid-area: contacto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid 3px black;
+    width: 85vw;
+    max-width: 400px;
+    margin: auto;
+    background: rgba(189, 189, 189, 0.5);
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    border-radius: 7px; } }
+
+@media (max-width: 1000px) {
+  ul,
+  li {
+    padding: 2px;
+    margin: 0;
+    list-style: none; }
+  ul.slider {
+    position: relative;
+    width: 600px;
+    height: 300px; }
+  ul.slider li {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    transition: opacity .5s;
+    background: #fff; }
+  ul.slider li img {
+    width: 110%;
+    height: 300px;
+    object-fit: contain; }
+  ul.slider li:first-child, ul.slider li:target {
+    opacity: 1; } }
+
+@media (max-width: 800px) {
+  ul,
+  li {
+    padding: 2px;
+    margin: 0;
+    list-style: none; }
+  ul.slider {
+    position: relative;
+    width: 600px;
+    height: 300px; }
+  ul.slider li {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    transition: opacity .5s;
+    background: #fff; }
+  ul.slider li img {
+    width: 110%;
+    height: 300px;
+    object-fit: contain; }
+  ul.slider li:first-child, ul.slider li:target {
+    opacity: 1; } }
+
+@media (max-width: 768px) {
+  ul,
+  li {
+    padding: 2px;
+    margin: 0;
+    list-style: none; }
+  ul.slider {
+    position: relative;
+    width: 600px;
+    height: 300px; }
+  ul.slider li {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    transition: opacity .5s;
+    background: #fff; }
+  ul.slider li img {
+    width: 80%;
+    height: 300px;
+    object-fit: contain; }
+  ul.slider li:first-child, ul.slider li:target {
+    opacity: 1; } }
+
+@media (max-width: 700px) {
   /*----------INDEXX----------- */
   .grilla {
     display: grid;
@@ -479,7 +573,8 @@ ul.slider {
       align-items: center;
       align-content: center;
       flex-direction: column; }
-    .hotsale p, .hotsale span {
+    .hotsale p,
+    .hotsale span {
       display: flex;
       align-items: center;
       justify-content: space-evenly;
@@ -503,22 +598,67 @@ ul.slider {
       display: flex;
       align-items: center;
       justify-items: center; }
-  .logo, .colecciones, .instagram {
+  .colecciones {
+    grid-area: colecciones;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; }
+  .instagram {
+    grid-area: instagram;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0;
+    margin: 0; }
+  .logo,
+  .colecciones,
+  .instagram {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     align-content: center;
     flex-direction: column; }
+  .nosotros {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-content: center;
+    flex-direction: row-reverse; }
   /*----------Galeria de imagenes----------- */
+  ul,
+  li {
+    padding: 2px;
+    margin: 0;
+    list-style: none; }
+  ul.slider {
+    position: relative;
+    width: 550px;
+    height: 300px; }
+  ul.slider li {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    transition: opacity .5s;
+    background: #fff; }
   ul.slider li img {
-    width: 70%;
+    width: 90%;
     height: 300px;
     object-fit: contain; }
-  .menu {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    padding-left: 190px; }
+  ul.slider li:first-child, ul.slider li:target {
+    opacity: 1; }
   /*----------CONTACTO----------- */
   .formulario {
     grid-area: contacto;
@@ -535,14 +675,195 @@ ul.slider {
     margin-bottom: 30px;
     border-radius: 7px; } }
 
-@media (max-width: 1100px) {
+@media (max-width: 570px) {
+  .grilla {
+    display: grid;
+    grid-template-areas: "hotsale hotsale hotsale" "nav nav nav " "colecciones colecciones colecciones " "instagram instagram instagram  redes" "contacto contacto contacto redes"; }
+  ul,
+  li {
+    padding: 2px;
+    margin: 0;
+    list-style: none; }
+  ul.slider {
+    position: relative;
+    width: 300px;
+    height: 300px; }
+  ul.slider li {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    transition: opacity .5s;
+    background: #fff; }
+  ul.slider li img {
+    width: 90%;
+    height: 300px;
+    object-fit: contain; }
+  ul.slider li:first-child, ul.slider li:target {
+    opacity: 1; }
+  .container {
+    margin: auto;
+    background-color: white;
+    width: 280px;
+    padding: 10px; }
   .formulario {
     grid-area: contacto;
     display: flex;
     flex-direction: column;
     align-items: center;
     border: solid 3px black;
-    width: 85vw;
+    width: 72vw;
+    max-width: 400px;
+    margin: auto;
+    background: rgba(189, 189, 189, 0.5);
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    border-radius: 7px; } }
+
+/* ----------------MEDIA QUERYS MOBILE----------- */
+@media (max-width: 480px) {
+  /*----------INDEXX----------- */
+  .grilla {
+    display: grid;
+    grid-template-areas: "hotsale hotsale hotsale" "nav nav nav " "colecciones colecciones colecciones " "instagram instagram instagram  redes" "contacto contacto contacto redes"; }
+  .hotsale {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh; }
+    .hotsale img {
+      display: flex;
+      max-width: 90px;
+      align-items: center;
+      align-content: center;
+      flex-direction: column; }
+    .hotsale p,
+    .hotsale span {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      align-content: center;
+      flex-direction: column; }
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    align-content: center;
+    flex-direction: column; }
+    .nav ul {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      align-content: center;
+      flex-direction: column; }
+    .nav img {
+      max-width: 90px; }
+    .nav h1 {
+      display: flex;
+      align-items: center;
+      justify-items: center; }
+  .colecciones {
+    grid-area: colecciones;
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; }
+    .colecciones .instagram {
+      grid-area: instagram;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 10vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      padding: 0;
+      margin: 0; }
+    .colecciones img {
+      width: 100%;
+      height: 100%;
+      transition: all 900ms ease-out;
+      will-change: transform; }
+  .capa h3 {
+    color: #fff;
+    transition: all 400ms ease-out;
+    font-size: medium; }
+  .capa p {
+    color: #fff;
+    font-size: xx-small;
+    width: auto;
+    height: auto; }
+  .logo,
+  .colecciones,
+  .instagram {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    align-content: center;
+    flex-direction: column; }
+  /*----------NOSOTROS----------- */
+  .nosotros {
+    display: flex;
+    flex-wrap: nowrap; }
+  .contenedortexto {
+    display: flex;
+    align-items: center;
+    place-content: stretch center;
+    flex-flow: row wrap;
+    background-color: black;
+    color: white;
+    width: 82vw; }
+  /*----------SLIDERS SHORTS, UNDERWEARS, BOXERS----------- */
+  ul,
+  li {
+    padding: 2px;
+    margin: 0;
+    list-style: none; }
+  ul.slider {
+    position: relative;
+    width: 300px;
+    height: 300px; }
+  ul.slider li {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    transition: opacity .5s;
+    background: #fff; }
+  ul.slider li img {
+    width: 100%;
+    height: 300px;
+    object-fit: contain; }
+  ul.slider li:first-child, ul.slider li:target {
+    opacity: 1; }
+  .container {
+    margin: auto;
+    background-color: white;
+    width: 280px;
+    padding: 10px; }
+  .menu {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-left: 55px; }
+  .formulario {
+    grid-area: contacto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid 3px black;
+    width: 90vw;
     max-width: 400px;
     margin: auto;
     background: rgba(189, 189, 189, 0.5);
