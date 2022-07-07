@@ -1,0 +1,44 @@
+.nosotros {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: stretch;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: black;
+    color: white;
+    width: 50vw;
+    max-width: 500px;
+    margin: auto;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    border-radius: 7px;
+    font-weight: bold;
+  }
+
+  
+  .contenedortexto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: stretch;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: black;
+    color: white;
+    width: 50vw;
+    max-width: 520px;
+    margin: auto;
+    padding: 40px;
+    margin-top: 40px;
+    margin-bottom: 45px;
+    border-radius: 25px;
+    p{ 
+      @extend %parrafoNosotros;
+    }
+  }
+
+  .material-symbols-outlined {
+    font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+  }

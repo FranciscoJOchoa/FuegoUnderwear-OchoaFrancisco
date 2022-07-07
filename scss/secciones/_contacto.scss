@@ -1,0 +1,87 @@
+.contacto {
+  grid-area: contacto;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  color: #f1f1f1;
+  text-align: center;
+
+  span {
+    font-weight: bold;
+    padding: 10px;
+  }
+}
+
+.formulario {
+  grid-area: contacto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: solid 3px black;
+  width: 30vw;
+  max-width: 500px;
+  margin: auto;
+  background: rgba(189, 189, 189, 0.5);
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  border-radius: 7px;
+
+  p {
+    @include parrafocontacto (Roboto, bold)
+  }
+
+  input {
+    height: 2rem;
+    width: 350px;
+    border-radius: 10px;
+    background-color: black;
+    color: #f1f1f1;
+    text-align: center;
+    margin: 0.5rem;
+    text-align: center;
+  }
+}
+
+.texto {
+  background-color: black;
+  color: #f1f1f1;
+  text-align: center;
+  margin: 20px;
+}
+
+.enviar {
+  transition: 0.8s;
+
+  &:hover {
+    background-color: lighten($color: red, $amount: 10);
+    color: white;
+    transform: scale(0.9);
+  }
+}
+
+.redes {
+  grid-area: redes;
+  display: flex;
+  background-color: black;
+  justify-content: center;
+
+  a {
+    font-size: 30px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background: red;
+    color: #f1f1f1;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    transition: all .4s ease-in-out;
+    text-decoration: none;
+    margin: 10px;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}
